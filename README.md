@@ -12,37 +12,29 @@ QTLAMP: A library for Emerging Pattern Mining with Multiple Hypothesis Testing C
 
 ## 1\. About
   This is a C++ package for statistical emerging pattern mining (SEPM) simulations.
-  For the details of SEPM, see [our paper](http://sepmpaper.com)
+  For the details of SEPM, see [our paper](http://www.tkl.iis.u-tokyo.ac.jp/~jkomiyama/pdf/kdd-statistical-emerging.pdf)
   The implementation of this package is based on [LCM++](https://code.google.com/archive/p/lcmplusplus/).
 
-+ Policies:
- -  RMED [1]
- -  IF [2]
- -  BTM [3]
- -  SAVAGE [4]
- -  RUCB [5]
- -  Sparring [6]
- -  MultiSBM [6]
      
 <a name="environment"></a>
 
 ## 2\. Environment
   This program supports a linux/GNU C++ environment. We do not check windows/MacOSX.
   
-  You need:
+  Required packages:
   - C++0x: modern C++ compiler (preferably GNU C++ (g++))
   -  waf (included) [7]: build script
-  -  cmdline.h (included) [8]: command line parser
   
 <a name="quick"></a>
 
 ## 3\. Quick run
   Type 
-  
-    ./compile
-    ./build/main -r 10
+
+    ./script/download.sh
+    make
+    time ./script/compare_methods.sh datasets/converted/svmguide3.label 0.3 10000000 0
     
-  to run 10 test simulation runs. The result of the runs will be written in out/example1.txt
+  This will... The result of the runs will be written in out/example1.txt
 
   This package also includes a simple plot tool (simpleplot.py) that is dependent on Python/Matplotlib.
   If your environment is g++/Python ready, try
