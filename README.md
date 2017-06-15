@@ -7,14 +7,13 @@ QTLAMP: A library for Emerging Pattern Mining with Multiple Hypothesis Testing C
 4\. [Misc](#misc)  
 - - -
 
-
+.
 <a name="about"></a>
 
 ## 1\. About
-  This is a C++ package for dueling bandit simulations. 
-  This package is designed to be
-  1. Simple : easy to understand and extend, but not optimized for speed. 
-  2. Independent : does not require external library.
+  This is a C++ package for statistical emerging pattern mining (SEPM) simulations.
+  For the details of SEPM, see [our paper](http://sepmpaper.com)
+  The implementation of this package is based on [LCM++](https://code.google.com/archive/p/lcmplusplus/).
 
 + Policies:
  -  RMED [1]
