@@ -32,9 +32,23 @@ QTLAMP: A library for Emerging Pattern Mining with Multiple Hypothesis Testing C
 
     ./script/download.sh
     make
-    time ./script/compare_methods.sh datasets/converted/svmguide3.label 0.3 10000000 0
+    time ./script/compare_methods.sh datasets/converted/svmguide3.label 0.3 10000000 6
     
-  This will... The result of the runs will be written in out/example1.txt
+  , which will finish within ten minutes with modern hardware. The result of the runs will be like
+    
+    qtlamp$ cat out/svmguide3-result-0.3-10000000-6-txt
+    Result of file out/svmguide3-6.fdr.out
+    Num of patterns found: 4971
+    Result of file out/svmguide3-6.fdrby.out
+    Num of patterns found: 1729
+    Result of file out/svmguide3-6.fwer.out
+    Num of patterns found: 536
+    Result of file out/svmguide3-6.bh.out
+    Num of patterns found: 1345
+    Result of file out/svmguide3-6.ep.out
+    Num of patterns found: 43461
+  
+  Note that the result of fdr minings can change slightly for each run due to its stochastic nature.
 
   This package also includes a simple plot tool (simpleplot.py) that is dependent on Python/Matplotlib.
   If your environment is g++/Python ready, try
