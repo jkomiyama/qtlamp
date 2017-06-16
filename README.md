@@ -22,7 +22,7 @@ QTLAMP: A library for Emerging Pattern Mining with Multiple Hypothesis Testing C
   
   Required packages:
   - C++0x: modern C++ compiler (preferably GNU C++ (g++))
-  - libgmp 
+  - libgmp: the GNU MP Bignum Library
   
 <a name="quick"></a>
 
@@ -49,9 +49,9 @@ QTLAMP: A library for Emerging Pattern Mining with Multiple Hypothesis Testing C
   
   Note that the result of fdr minings can change slightly for each run due to its stochastic nature.
   
-##References
+## References
 
     [1] Junpei Komiyama, Masakazu Ishihata, Hiroki Arimura, Takashi Nishibayashi, Shin-Ichi Minato. Statistical Emerging Pattern Mining with Multiple Testing Correction. In Proceedings of the 23rd ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD 2017), Research Track, Hafifax, Nova Scotia, Canada, August 13-17, 2017 
 
-##Author
+## Author
   Junpei Komiyama (junpei.komiyama atmark gmail.com)
