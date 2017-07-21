@@ -3,7 +3,10 @@
 
 #include <iostream>
 #include <sstream>
+#include <utility>
+#include <vector>
 #include <map>
+#include <random>
 #include <functional> //hash
 #include <unordered_set>
 #include <set>
