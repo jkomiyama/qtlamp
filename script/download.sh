@@ -1,9 +1,11 @@
+#!/bin/bash
 cd lcm
 echo "downloading lcm."
 wget --no-check-certificate http://research.nii.ac.jp/~uno/code/lcm53.zip
 unzip lcm53.zip
 echo "compiling lcm."
 make
+cd ..
 cd datasets/original
 echo "downloading datasets..."
 wget --no-check-certificate https://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/binary/a1a

@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "script for batch mining - filename :" $1 " wr=" $2 " n=" $3 " max_pat=" $4
 echo "generating data."
 fname_ext="${1##*/}"
