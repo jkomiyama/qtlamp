@@ -27,7 +27,7 @@ using namespace std;
 extern std::mt19937 randomEngine;
 
 #define pi 3.14159
-#define ITEM_MAX 100000
+#define ITEM_MAX 10000
 
 class PNode {
 public:
