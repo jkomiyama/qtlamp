@@ -15,7 +15,7 @@ echo "running Naive BH (naive FDR mining with all itemset)."
 ./mht -of out/$fname-$4.bh.out -wr $2 -max_pat $4 -delta 0.05 N ./temp/$fname.$4.split.0 > out/fname-$4.bhstdout.txt
 echo "running standard EP."
 ./mht -of out/$fname-$4.ep.out -wr $2 -max_pat $4 -min_sup 10 E ./temp/$fname.$4.split.0 > out/$fname-$4.epbatch.txt
-rm out/$fname-result-$2-$3-$4-txt
+rm -f out/$fname-result-$2-$3-$4-txt
 python script/bootstrapping.py -v -f out/$fname-$4.fdr.out -a out/$fname-result-$2-$3-$4-txt --wr $2
 python script/bootstrapping.py -v -f out/$fname-$4.fdrby.out -a out/$fname-result-$2-$3-$4-txt --wr $2
 python script/bootstrapping.py -v -f out/$fname-$4.fwer.out -a out/$fname-result-$2-$3-$4-txt --wr $2
